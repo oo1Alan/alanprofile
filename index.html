@@ -27,6 +27,11 @@
     }
 
     .dot {
+      position: relative;
+    }
+
+    .dot::after {
+      content: '.';
       font-size: 2rem;
       animation: blink 1.5s steps(1, end) infinite;
     }
@@ -47,8 +52,7 @@
 </head>
 <body>
   <div class="container">
-    <p>Profile in progress<span class="dot">.</span></p>
+    <p>Profile in progress<span class="dot"></span></p>
   </div>
 </body>
 </html>
-
